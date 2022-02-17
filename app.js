@@ -79,15 +79,3 @@ app.post("/failure", function(req, res) {
 app.listen(process.env.PORT || 3000, function() {
   console.log("Server is running on port 3000.");
 })
-
-//API apiKey
-//c64f072103f1b6efa0b2c6533278bccd-us14
-
-//AudienceID
-//da615e2acb
-
-//Root url
-//https://us14.api.mailchimp.com/3.0/
-
-//heroku url
-//https://evening-bastion-58534.herokuapp.com/
