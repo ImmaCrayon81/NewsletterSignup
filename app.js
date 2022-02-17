@@ -12,8 +12,6 @@ app.get("/", function(req, res) {
   res.sendFile(__dirname + "/signup.html");
 });
 
-console.log(process.env);
-
 mailchimp.setConfig({
   apiKey: process.env.API_KEY,
   server: "us14"
