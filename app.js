@@ -2,6 +2,7 @@ const express = require("express"); //makes node easier to use
 const https = require("https"); //fetch external API
 const app = express();
 const mailchimp = require("@mailchimp/mailchimp_marketing");
+require('dotenv').config();
 app.use(express.urlencoded({
   extended: true
 }));
@@ -11,8 +12,10 @@ app.get("/", function(req, res) {
   res.sendFile(__dirname + "/signup.html");
 });
 
+console.log(process.env);
+
 mailchimp.setConfig({
-  apiKey: "c64f072103f1b6efa0b2c6533278bccd-us14",
+  apiKey: process.env.API_KEY,
   server: "us14"
 });
 
@@ -87,3 +90,6 @@ app.listen(process.env.PORT || 3000, function() {
 
 //Root url
 //https://us14.api.mailchimp.com/3.0/
+
+//heroku url
+//https://evening-bastion-58534.herokuapp.com/
