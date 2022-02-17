@@ -11,8 +11,8 @@ $ npm install
 $ nodemon app.js || node app.js
 ```
 Your app should now be running on localhost:3000.
-
 <br>
+
 ## Deploying to Heroku
 ```
 $ heroku create
