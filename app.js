@@ -54,28 +54,6 @@ app.post("/failure", function(req, res) {
 });
 
 
-//   const jsonData = JSON.stringify(data);
-//
-//   const url = "https://us14.api.mailchimp.com/3.0/lists/da615e2acb"
-//
-//   const options = {
-//     method: "POST",
-//     auth: "enyang:c64f072103f1b6efa0b2c6533278bccd-us14"
-//   }
-//
-//   const request = https.request(url, options, function(response) {
-//     response.on("data", function(data) { //on is the same as eventListener for JS, just shorter to type
-//       console.log(JSON.parse(data));
-//     })
-//   })
-//
-//   request.write(jsonData);
-//   request.end();
-//
-//
-//
-// });
-
 app.listen(process.env.PORT || 3000, function() {
   console.log("Server is running on port 3000.");
 })
